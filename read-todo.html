@@ -24,9 +24,13 @@
                 })
             .then(function(json) {
                                
+                /*
                 for (let index in json) {
                     htmlStr += `<li> User Id: ${json[index].userId} ID: ${json[index].id} Title: ${json[index].title} Completed: ${json[index].completed} </li>`
-                }                
+                } 
+                */            
+               
+                //div.innerHTML += htmlStr      
                 
                 for (let index in json) {
                     for (let value in json[index]) {
@@ -34,8 +38,7 @@
                     }
                     rows += '<br/>'
                 }
-
-                //div.innerHTML += htmlStr              
+                       
                 div.innerHTML += rows
             })
                                 
